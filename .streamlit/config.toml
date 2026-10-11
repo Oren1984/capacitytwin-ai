@@ -1,0 +1,16 @@
+[server]
+headless = true
+fileWatcherType = "none"     # no source watching in the container
+maxUploadSize = 1          # MB; workload files are small JSON documents
+maxMessageSize = 50        # MB
+
+[browser]
+gatherUsageStats = false
+serverAddress = "localhost"  # also stops Streamlit looking up the public IP at startup
+
+[theme]
+base = "light"
+
+[client]
+showErrorDetails = "none"   # never show stack traces to users; they go to the log
+toolbarMode = "minimal"

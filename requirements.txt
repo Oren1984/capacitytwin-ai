@@ -1,0 +1,4 @@
+# Runtime dependencies (pinned for reproducible builds)
+streamlit==1.60.0
+pandas==3.0.1
+altair==6.2.2

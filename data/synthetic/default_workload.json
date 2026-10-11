@@ -1,0 +1,343 @@
+{
+  "name": "Studio team - November 2026 delivery plan",
+  "notice": "Synthetic demonstration data - not real employee or client information.",
+  "period_start": "2026-11-02",
+  "period_end": "2026-12-04",
+  "resources": [
+    {
+      "id": "R1",
+      "name": "Dana Levi",
+      "role": "Backend developer",
+      "skills": [
+        "backend"
+      ],
+      "hours_per_day": 8,
+      "working_days": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "focus_factor": 0.8,
+      "unavailable": [],
+      "capacity_boosts": []
+    },
+    {
+      "id": "R2",
+      "name": "Eli Cohen",
+      "role": "Frontend developer",
+      "skills": [
+        "frontend"
+      ],
+      "hours_per_day": 8,
+      "working_days": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "focus_factor": 0.8,
+      "unavailable": [],
+      "capacity_boosts": []
+    },
+    {
+      "id": "R3",
+      "name": "Maya Stern",
+      "role": "Designer (part-time)",
+      "skills": [
+        "design"
+      ],
+      "hours_per_day": 6,
+      "working_days": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "focus_factor": 0.8,
+      "unavailable": [
+        {
+          "start": "2026-11-12",
+          "end": "2026-11-12"
+        }
+      ],
+      "capacity_boosts": []
+    },
+    {
+      "id": "R4",
+      "name": "Noa Barak",
+      "role": "Project coordinator",
+      "skills": [
+        "coordination",
+        "qa",
+        "content"
+      ],
+      "hours_per_day": 8,
+      "working_days": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "focus_factor": 0.8,
+      "unavailable": [],
+      "capacity_boosts": []
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T01",
+      "description": "Portal requirements workshop",
+      "project": "Client Portal Relaunch",
+      "effort_hours": 8,
+      "priority": 1,
+      "due_date": "2026-11-03",
+      "required_skill": "coordination",
+      "dependencies": [],
+      "assigned_resource": null,
+      "release_date": null
+    },
+    {
+      "id": "T02",
+      "description": "Portal UX wireframes",
+      "project": "Client Portal Relaunch",
+      "effort_hours": 14,
+      "priority": 1,
+      "due_date": "2026-11-09",
+      "required_skill": "design",
+      "dependencies": [
+        "T01"
+      ],
+      "assigned_resource": null,
+      "release_date": null
+    },
+    {
+      "id": "T03",
+      "description": "Portal visual design",
+      "project": "Client Portal Relaunch",
+      "effort_hours": 18,
+      "priority": 2,
+      "due_date": "2026-11-17",
+      "required_skill": "design",
+      "dependencies": [
+        "T02"
+      ],
+      "assigned_resource": null,
+      "release_date": null
+    },
+    {
+      "id": "T04",
+      "description": "Portal API endpoints",
+      "project": "Client Portal Relaunch",
+      "effort_hours": 30,
+      "priority": 2,
+      "due_date": "2026-11-12",
+      "required_skill": "backend",
+      "dependencies": [
+        "T01"
+      ],
+      "assigned_resource": null,
+      "release_date": null
+    },
+    {
+      "id": "T05",
+      "description": "Portal frontend build",
+      "project": "Client Portal Relaunch",
+      "effort_hours": 16,
+      "priority": 2,
+      "due_date": "2026-11-24",
+      "required_skill": "frontend",
+      "dependencies": [
+        "T03"
+      ],
+      "assigned_resource": null,
+      "release_date": null
+    },
+    {
+      "id": "T06",
+      "description": "Portal content migration",
+      "project": "Client Portal Relaunch",
+      "effort_hours": 16,
+      "priority": 3,
+      "due_date": "2026-11-18",
+      "required_skill": "content",
+      "dependencies": [
+        "T02"
+      ],
+      "assigned_resource": null,
+      "release_date": null
+    },
+    {
+      "id": "T07",
+      "description": "Portal system integration",
+      "project": "Client Portal Relaunch",
+      "effort_hours": 6,
+      "priority": 2,
+      "due_date": "2026-11-25",
+      "required_skill": "backend",
+      "dependencies": [
+        "T04",
+        "T05"
+      ],
+      "assigned_resource": null,
+      "release_date": null
+    },
+    {
+      "id": "T08",
+      "description": "Portal QA and acceptance",
+      "project": "Client Portal Relaunch",
+      "effort_hours": 8,
+      "priority": 1,
+      "due_date": "2026-11-26",
+      "required_skill": "qa",
+      "dependencies": [
+        "T06",
+        "T07"
+      ],
+      "assigned_resource": null,
+      "release_date": null
+    },
+    {
+      "id": "T09",
+      "description": "Portal launch checklist",
+      "project": "Client Portal Relaunch",
+      "effort_hours": 3,
+      "priority": 1,
+      "due_date": "2026-11-27",
+      "required_skill": "coordination",
+      "dependencies": [
+        "T08"
+      ],
+      "assigned_resource": null,
+      "release_date": null
+    },
+    {
+      "id": "T10",
+      "description": "App discovery brief",
+      "project": "Mobile Booking App",
+      "effort_hours": 6,
+      "priority": 2,
+      "due_date": "2026-11-04",
+      "required_skill": "coordination",
+      "dependencies": [],
+      "assigned_resource": null,
+      "release_date": null
+    },
+    {
+      "id": "T11",
+      "description": "App UX flows",
+      "project": "Mobile Booking App",
+      "effort_hours": 14,
+      "priority": 2,
+      "due_date": "2026-11-13",
+      "required_skill": "design",
+      "dependencies": [
+        "T10"
+      ],
+      "assigned_resource": null,
+      "release_date": null
+    },
+    {
+      "id": "T12",
+      "description": "App icon and brand assets",
+      "project": "Mobile Booking App",
+      "effort_hours": 8,
+      "priority": 3,
+      "due_date": "2026-11-20",
+      "required_skill": "design",
+      "dependencies": [
+        "T11"
+      ],
+      "assigned_resource": null,
+      "release_date": null
+    },
+    {
+      "id": "T13",
+      "description": "Booking service backend",
+      "project": "Mobile Booking App",
+      "effort_hours": 34,
+      "priority": 2,
+      "due_date": "2026-11-19",
+      "required_skill": "backend",
+      "dependencies": [
+        "T10"
+      ],
+      "assigned_resource": null,
+      "release_date": null
+    },
+    {
+      "id": "T14",
+      "description": "App screens frontend",
+      "project": "Mobile Booking App",
+      "effort_hours": 20,
+      "priority": 2,
+      "due_date": "2026-11-23",
+      "required_skill": "frontend",
+      "dependencies": [
+        "T11"
+      ],
+      "assigned_resource": null,
+      "release_date": null
+    },
+    {
+      "id": "T15",
+      "description": "Payment integration",
+      "project": "Mobile Booking App",
+      "effort_hours": 16,
+      "priority": 3,
+      "due_date": "2026-11-25",
+      "required_skill": "backend",
+      "dependencies": [
+        "T13"
+      ],
+      "assigned_resource": null,
+      "release_date": null
+    },
+    {
+      "id": "T16",
+      "description": "App store copy",
+      "project": "Mobile Booking App",
+      "effort_hours": 8,
+      "priority": 4,
+      "due_date": "2026-11-26",
+      "required_skill": "content",
+      "dependencies": [
+        "T12"
+      ],
+      "assigned_resource": null,
+      "release_date": null
+    },
+    {
+      "id": "T17",
+      "description": "App QA pass",
+      "project": "Mobile Booking App",
+      "effort_hours": 12,
+      "priority": 2,
+      "due_date": "2026-11-27",
+      "required_skill": "qa",
+      "dependencies": [
+        "T14",
+        "T15"
+      ],
+      "assigned_resource": null,
+      "release_date": null
+    },
+    {
+      "id": "T18",
+      "description": "Stakeholder demo preparation",
+      "project": "Mobile Booking App",
+      "effort_hours": 5,
+      "priority": 3,
+      "due_date": "2026-11-27",
+      "required_skill": "coordination",
+      "dependencies": [
+        "T14"
+      ],
+      "assigned_resource": null,
+      "release_date": null
+    }
+  ]
+}
